@@ -554,5 +554,6 @@ def debug():
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    logger.info("🚀 Iniciando servidor Flask")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Para producción, usa el puerto de Render
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
