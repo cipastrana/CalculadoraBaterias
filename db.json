@@ -1,0 +1,715 @@
+{
+    "baterias": {
+        "PM 4-4": {
+            "usos": "UPS, Seguridad, Energía Solar y Eólica, Telecom, Vehículos Eléctricos Ligeros, Alumbrado"
+        },
+        "PS440": {
+            "usos": "UPS, Telecom, Sistemas de Seguridad y Emergencia, Equipos Médicos, Energía Solar y eólica, Sistemas marinos, iluminación"
+        },
+        "PS445": {
+            "usos": "UPS, Telecom, Sistemas de Seguridad y Emergencia, Equipos Médicos, Energía Solar y eólica, Sistemas marinos, iluminación"
+        },
+        "MS 1.3-6": {
+            "usos": "UPS, Vehículos Eléctricos, Iluminación de Emergencia"
+        },
+        "MS 9-12": {
+            "usos": "UPS, Vehículos Eléctricos, Iluminación de Emergencia"
+        },
+        "PM 1.3-6": {
+            "usos": "UPS, Equipos Industriales, Energías Renovables, Vehículos Eléctricos"
+        },
+        "PM 1.5-6": {
+            "usos": "UPS, Equipos Industriales, Energías Renovables, Vehículos Eléctricos"
+        },
+        "PS610": {
+            "usos": "Alarmas y seguridad, Telecom, Juguetes y Aparatos Eléctricos, Iluminación de emergencia, UPS, Equipo Médico"
+        },
+        "PS612": {
+            "usos": "Alarmas y seguridad, Telecom, Juguetes y Aparatos Eléctricos, Iluminación de emergencia, UPS, Equipo Médico"
+        },
+        "PM 2.8-6": {
+            "usos": "UPS, Equipos médicos y de emergencia, Sistemas de seguridad y alarma, Juguetes"
+        },
+        "PS621": {
+            "usos": "UPS, Equipos portátiles, Energías renovables, Iluminación de emergencia, Equipo Médico, Protección contra Incendios"
+        },
+        "PS628": {
+            "usos": "UPS, Equipos portátiles, Energías renovables, Iluminación de emergencia, Equipo Médico, Protección contra Incendios"
+        },
+        "PM 3.2-6": {
+            "usos": "UPS, Energías Renovables, Telecom, Sistemas de seguridad, Iluminación de emergencia"
+        },
+        "PS630": {
+            "usos": "UPS, Seguridad, Equipo Médico y Movilidad, Telecom, Sistemas de emergencia, Iluminación de emergencia, Protección contra incendios"
+        },
+        "PS632": {
+            "usos": "UPS, Seguridad, Equipo Médico y Movilidad, Telecom, Sistemas de emergencia, Iluminación de emergencia, Protección contra incendios"
+        },
+        "NP 4-6": {
+            "usos": "Juguetes, Vehículos Eléctricos, UPS, No breaks, linternas de emergencia, Equipos médicos e industriales"
+        },
+        "PM 4-6": {
+            "usos": "UPS, Motores de combustión, Vehículos eléctricos ligeros, Energía solar y eólica, Telecom, Sistemas Médicos, Sistemas de seguridad"
+        },
+        "PS640": {
+            "usos": "iluminación de emergencia, Equipo Médico, Protección contra Incendios"
+        },
+        "PM 5-6": {
+            "usos": "UPS, Motores de combustión, Vehículos eléctricos ligeros, Energía solar y eólica, Telecom, Sistemas Médicos, Sistemas de seguridad"
+        },
+        "PS 650LS": {
+            "usos": "iluminación de emergencia, Equipo Médico, Protección contra Incendios"
+        },
+        "PSH-655FR": {
+            "usos": "UPS, Seguridad y alarma, Telecom, Equipos Portátiles y de emergencia"
+        },
+        "NP7-6": {
+            "usos": "UPS, Equipos de seguridad y alarma, Juguetes y electrónica portatil, Equipos de sonido portátiles"
+        },
+        "PM7-6": {
+            "usos": "Baterías de arranque (SLI), Sistemas de respaldo y UPS, energías renovables, automotores eléctricos, sistemas de energía solar y eólica, montacargas, carretillas eléctricas, barredoras"
+        },
+        "PS670": {
+            "usos": "Aplicaciones cíclicas de luz, flotadores de uso general, sistemas dde seguridad y contra incendios, iluminación de emergencia, UPS, juguetes, dispositivos médicos"
+        },
+        "PM 8-6": {
+            "usos": "Baterías de arranque (SLI), Sistemas de respaldo y UPS, energías renovables, automotores eléctricos, sistemas de energía solar y eólica, montacargas, carretillas eléctricas, barredoras"
+        },
+        "PS 682": {
+            "usos": "Aplicaciones cíclicas de luz, flotadores de uso general, sistemas dde seguridad y contra incendios, iluminación de emergencia, UPS, juguetes, dispositivos médicos"
+        },
+        "PM 10-6": {
+            "usos": "UPS, alarmas, videovigilancia, iluminación de emergencia, equipos de audio portátiles, cámaras de video, juguetes, sistemas solares, vehículos industriales"
+        },
+        "NP 12-6": {
+            "usos": "UPS, alarmas, videovigilancia, iluminación de emergencia, equipos de audio portátiles, cámaras de video, juguetes, sistemas solares, vehículos industriales"
+        },
+        "PM 12-6": {
+            "usos": "UPS, alarmas, videovigilancia, iluminación de emergencia, equipos de audio portátiles, cámaras de video, juguetes, sistemas solares, vehículos industriales"
+        },
+        "PS 6100": {
+            "usos": "sistemas de acceso, videovigilancia, dtección de incendios, Telecom, Equipos Médicos, sistemas de iluminación de emergencia, sistemas de energías renovables"
+        },
+        "PS 6100f2": {
+            "usos": "Propósito general, iluminación de emergencia, equipo médico, protección contra incendios"
+        },
+        "PS 6120FP": {
+            "usos": "Propósito general, iluminación de emergencia, equipo médico, protección contra incendios"
+        },
+        "PS 6360F2": {
+            "usos": "Propósito general, iluminación de emergencia, equipo médico, protección contra incendios"
+        },
+        "PS832": {
+            "usos": "Uso general, reserva, Ondulador (Inversor), aplicaciones médicas, alumbrado de emergencia"
+        },
+        "PS128": {
+            "usos": "Arranque de motores, Sistemas UPS, paneles solares y aerogeneradores, iluminaión liviana"
+        },
+        "NP 1.2-12": {
+            "usos": "Seguridad y alarmas, iluminación de emergencia, UPS, Equipo Médico, Telecomunicaciones, Tracción ligera"
+        },
+        "PM 1.3-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS1212": {
+            "usos": "Sistemas de seguridad y alarma, iluminación de emergencia, equipo médico, UPS, uso general juguetes eléctricos"
+        },
+        "NP2-12": {
+            "usos": "Seguridad y alarmas, iluminación de emergencia, UPS, Equipo Médico, Telecomunicaciones, Tracción ligera"
+        },
+        "NP2.3-12": {
+            "usos": "Seguridad y alarmas, iluminación de emergencia, UPS, Equipo Médico, Telecomunicaciones, Tracción ligera"
+        },
+        "PM2.3-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PM2.6-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS1220": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS1221S": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS1223": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS1227": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS1228": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS1229": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "NP3.4-12": {
+            "usos": "Energía de reserva, alarmas, iluminación de emergencia, equipos de monitoreo meédico, UPS, seeñalización vial, proyectos de robótica"
+        },
+        "PS1230": {
+            "usos": "Sistemas de seguridad, alarmas contra incendios, equipos médicos, UPS, iluminación de emergencia, telecomunicaciones"
+        },
+        "PS1238": {
+            "usos": "Sistemas de seguridad, alarmas contra incendios, equipos médicos, UPS, iluminación de emergencia, telecomunicaciones"
+        },
+        "NPY4.5-12": {
+            "usos": "UPS/Nobreak, iluminación de emergencia, alarmas, carros eléctricos, equipo industrial o médico"
+        },
+        "PM4-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "NP5-12": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "NP5-12F2": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "PM5-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PM5.5-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS1250": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS1250F1": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "NP7-12": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "NP7-12F": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "PM7-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS1270": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS1270F": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS1280": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "NP9-12": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "PM9-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS1290": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PM10-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12100H": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "NP12-12": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "PM12-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12120": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS12140": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PM17-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "NP18-12": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "PM18-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12180": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS12180F2": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PM20-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12200NB": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PSH 12180": {
+            "usos": "UPS, telecom, iluminación de emergencia y seguridad, sistemas de control de acceso, energías renovables, equipos médicos, estaciones de bombeo"
+        },
+        "NP24-12": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "NP24-12B": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "PM26-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12260": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS12260NB": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PM2812": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12280": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "NP33-12": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "PM33-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12330": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS12350": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PM36-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "DJM1238": {
+            "usos": "Telecomuniciones, UPS, Centros de datos, Almacenamiento de energía, Iluminación de emergencia, seguridad, Equipo médico e industrial, fuerza motríz"
+        },
+        "NP38-12": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "PM38-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "FT12-40": {
+            "usos": "Sistemas de potencia, UPS, Equipo de conexión de red, Equipo de red especial LAN, Sistema de centrales eléctricas"
+        },
+        "MM40-12": {
+            "usos": "Telecomunicaciones, UPS, Sistemas de centrales eléctricas, Alimentación de respaldo de emergencia, Sistemas de alarma y seguridad, Sistemas de control automatizado"
+        },
+        "PM40-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12400": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "NP55-12": {
+            "usos": "UPS, iluminación de emergencia y sistemas de seguridad, Equipos médico y movilidad, vehículos y transporte ligero, Industria, proyectos de robótica"
+        },
+        "PM55-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12550U": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PM60-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "DJM1265": {
+            "usos": "Telecomuniciones, UPS, Centros de datos, Almacenamiento de energía, Iluminación de emergencia, seguridad, Equipo médico e industrial, fuerza motríz"
+        },
+        "PM65-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12650": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PM75-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "PS12750": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PM80-12": {
+            "usos": "Propósito general, Equipo Médico, iluminación de emergencia, sistemas de seguridad"
+        },
+        "DJM12100": {
+            "usos": "Telecomuniciones, UPS, Centros de datos, Almacenamiento de energía, Iluminación de emergencia, seguridad, Equipo médico e industrial, fuerza motríz"
+        },
+        "FT12-100": {
+            "usos": "Sistemas de potencia, UPS, Equipo de conexión de red, Equipo de red especial LAN, Sistema de centrales eléctricas"
+        },
+        "PS121000": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS121000B": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "PS121100B": {
+            "usos": "Sistemas de seguridad y alarmas, No break y UPS, iluminación de emergencia, equipos médicos, Juguetes y dispositivos electrónicos, telecom"
+        },
+        "FT12-150": {
+            "usos": "Sistemas de potencia, UPS, Equipo de conexión de red, Equipo de red especial LAN, Sistema de centrales eléctricas"
+        },
+        "PHR-12150": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PHR-1236": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PHR-12500": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PMH12-12": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PMH14-12": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PMH20-12": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PHR-12200": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PHR-12300": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PHR-12350": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PHR-12400": {
+            "usos": "Centros de procesamiento de datos, SAI/UPS de alta tasa, Equipos médicos, Equipos de emergencia, Sistemas de alarmas"
+        },
+        "PG-12V28FR": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Luces de emergencia Equipos de movilidad eléctrica"
+        },
+        "PG-12V42FR": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Luces de emergencia Equipos de movilidad eléctrica"
+        },
+        "PG-12V45-M6-FR": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Luces de emergencia Equipos de movilidad eléctrica"
+        },
+        "PG-12V75FR": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Luces de emergencia Equipos de movilidad eléctrica"
+        },
+        "PG-12V100FR": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Luces de emergencia Equipos de movilidad eléctrica"
+        },
+        "PG-12V130FR": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Luces de emergencia Equipos de movilidad eléctrica"
+        },
+        "PG-12V140FR": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Luces de emergencia Equipos de movilidad eléctrica"
+        },
+        "MN38-12": {
+            "usos": "Vehículos eléctricos industriales, Vehículos recreativos (Embarcaciones, Autocaravanas, carritos de golf), Equipos médicos, Almacenamiento de energía solar, Equipos de movilidad eléctrica"
+        },
+        "PDC-1285": {
+            "usos": "Vehículos eléctricos industriales, Vehículos recreativos (Embarcaciones, Autocaravanas, carritos de golf), Equipos médicos, Almacenamiento de energía solar, Equipos de movilidad eléctrica"
+        },
+        "PMD18-12": {
+            "usos": "Vehículos eléctricos industriales, Vehículos recreativos (Embarcaciones, Autocaravanas, carritos de golf), Equipos médicos, Almacenamiento de energía solar, Equipos de movilidad eléctrica"
+        },
+        "PMD24-12": {
+            "usos": "Vehículos eléctricos industriales, Vehículos recreativos (Embarcaciones, Autocaravanas, carritos de golf), Equipos médicos, Almacenamiento de energía solar, Equipos de movilidad eléctrica"
+        },
+        "PMD33-12": {
+            "usos": "Vehículos eléctricos industriales, Vehículos recreativos (Embarcaciones, Autocaravanas, carritos de golf), Equipos médicos, Almacenamiento de energía solar, Equipos de movilidad eléctrica"
+        },
+        "PMD38-12": {
+            "usos": "Vehículos eléctricos industriales, Vehículos recreativos (Embarcaciones, Autocaravanas, carritos de golf), Equipos médicos, Almacenamiento de energía solar, Equipos de movilidad eléctrica"
+        },
+        "PDC-122000B": {
+            "usos": "Vehículos eléctricos industriales, Vehículos recreativos (Embarcaciones, Autocaravanas, carritos de golf), Equipos médicos, Almacenamiento de energía solar, Equipos de movilidad eléctrica"
+        },
+        "TRO-T105+": {
+            "usos": "Vehículos eléctricos industriales, Vehículos recreativos (Embarcaciones, Autocaravanas, carritos de golf), Maquinaria de limpieza, Almacenamiento de energía solar, Equipos de movilidad eléctrica"
+        },
+        "TRO-T875": {
+            "usos": "Vehículos eléctricos industriales, Vehículos recreativos (Embarcaciones, Autocaravanas, carritos de golf), Maquinaria de limpieza, Almacenamiento de energía solar, Equipos de movilidad eléctrica"
+        },
+        "PMG33-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "PMG40-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "MNG55-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "PMG65-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "PMG70-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "PMG100-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "MNG120-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "PMG120-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "PMG150-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "PMG200-12": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "XE-30": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "XE-40": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "XE-60": {
+            "usos": "SAI/UPS, Almacenamiento de energía solar y eólica, Vehículos eléctricos, Dispositivos médicos avanzados, Telecomunicaciones, Equipos de emergencia, Equipos de movilidad eléctrica"
+        },
+        "BT5L-BS": {
+            "usos": "MOTOCICLETAS"
+        },
+        "E93BP-2": {
+            "usos": "Juguetes electrónicos, Linternas, Radios portátiles, Instrumentos de audio"
+        },
+        "BAT-23A": {
+            "usos": "Juguetes electrónicos, Controles remotos, Alarmas inalámbricas, Monitores de azucar de sangre"
+        },
+        "GP-9V": {
+            "usos": "Juguetes electrónicos, Multimetros, Dispositivos médicos, Detectores de humo, Proyectos de electrónica"
+        },
+        "CR1216": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR1220": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR1225": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR1616": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR1620": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR1632": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2016": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2025": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2032": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2320": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2325": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2330": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2354": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2430": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2450": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR2477": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "CR3032": {
+            "usos": "Dispositivos electrónicos portátiles (relojes, audifonos de apoyo auditivo, calculadora, controles remotos), Hogar y salud (Termometros, basculas, adornos electrónicos) , Sensores IoT"
+        },
+        "BR-2/3A": {
+            "usos": "Cámaras digitales, sensores de alarma y seguridad, electrónica profesional, dispositivos médicos, relojes de tiempo real"
+        },
+        "CR123A": {
+            "usos": "Cámaras digitales, sensores de alarma y seguridad, electrónica profesional, dispositivos médicos, relojes de tiempo real"
+        },
+        "ER-26500H": {
+            "usos": "Cámaras digitales, sensores de alarma y seguridad, electrónica profesional, dispositivos médicos, relojes de tiempo real"
+        },
+        "ER-34615H": {
+            "usos": "Cámaras digitales, sensores de alarma y seguridad, electrónica profesional, dispositivos médicos, relojes de tiempo real"
+        },
+        "BAT-14500-1100MAH": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "HDCNR18650-2200-3.7V": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "HDCNR18650-2600-3.7V": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "HDCNR18650-3000-3.7V": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "HDCNR18650-3200-3.7V": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "PW18650": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "HDCNR21700-4000-3.7V": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "HDCNR21700-5000-3.7V": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "BAT-26650-5000MAH": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "HDCNR26650-4500-3.7V": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "HDCNR26650-5000-3.7V": {
+            "usos": "Dispositivos portatiles (laptops, linternas LED, herramientas eléctricas, cámaras digitales), Drones pequeños, Movilidad eléctrica (e-bikes, scooters eléctricos, autos eléctricos) Almacenamiento estacionario (Bancos de baterías, UPS)"
+        },
+        "HDEB36-13(36V13AH)": {
+            "usos": "EBIKE"
+        },
+        "DBT702030": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "9210000169-0": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "YT5058": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "DBT 703048D": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "YT5062": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "YT5067": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "GA-B-25C-1550-3S1P-DEANS": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "KD 763462": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "TA-HC-75C-1300-4S1P": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "TA-RL-95C-1300-4S1P-SQUAR": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "TA-RL2.0-100C-1300-4S1P-H": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "TA-45C-1550-4S1P-XT60": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "TA-RL-95C-1550-4S1P-SQUAR": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "YT5068": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "TA-RL-95C-1300-5S1P": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "RB-10P008": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "GA-B-50C-5000-2S1P-HARD10": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "DBT 684212J": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "DBT 8634106": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "N4000.5S.25": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "GA-B-45C-5000-5S1P-DEANS": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "9526000002-0": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "912700013-0": {
+            "usos": "Drones, Vehículos RC, Robótica aficionada, Uso médico (suministro emergencia)"
+        },
+        "RB-10P010": {
+            "usos": "Electrónica de consumo (jugeuetes, linternas, controles remotos), alimentación de circuitos en Protoboard"
+        },
+        "CUSTOM-71": {
+            "usos": "Iluminación de mergencia"
+        },
+        "SR621SW": {
+            "usos": "Relojes de pulsera analógicos, relojes digitales, cronómetros y medidores de precisión, calculadoras, controles remotos de dispositivos específicos, pequeños juguetes y dispositivos de iluminación LED, equipos de reserva de memoria CMOS"
+        },
+        "CR 364": {
+            "usos": "Relojes de pulsera analógicos, relojes digitales, cronómetros y medidores de precisión, calculadoras, controles remotos de dispositivos específicos, pequeños juguetes y dispositivos de iluminación LED, equipos de reserva de memoria CMOS"
+        },
+        "CR 377": {
+            "usos": "Relojes de pulsera analógicos, relojes digitales, cronómetros y medidores de precisión, calculadoras, controles remotos de dispositivos específicos, pequeños juguetes y dispositivos de iluminación LED, equipos de reserva de memoria CMOS"
+        },
+        "SR626": {
+            "usos": "Relojes de pulsera analógicos, relojes digitales, cronómetros y medidores de precisión, calculadoras, controles remotos de dispositivos específicos, pequeños juguetes y dispositivos de iluminación LED, equipos de reserva de memoria CMOS"
+        },
+        "SR920": {
+            "usos": "Relojes de pulsera analógicos, relojes digitales, cronómetros y medidores de precisión, calculadoras, controles remotos de dispositivos específicos, pequeños juguetes y dispositivos de iluminación LED, equipos de reserva de memoria CMOS"
+        },
+        "SR927": {
+            "usos": "Relojes de pulsera analógicos, relojes digitales, cronómetros y medidores de precisión, calculadoras, controles remotos de dispositivos específicos, pequeños juguetes y dispositivos de iluminación LED, equipos de reserva de memoria CMOS"
+        },
+        "SR1130W": {
+            "usos": "Relojes de pulsera analógicos, relojes digitales, cronómetros y medidores de precisión, calculadoras, controles remotos de dispositivos específicos, pequeños juguetes y dispositivos de iluminación LED, equipos de reserva de memoria CMOS"
+        },
+        "SR936SW": {
+            "usos": "Relojes de pulsera analógicos, relojes digitales, cronómetros y medidores de precisión, calculadoras, controles remotos de dispositivos específicos, pequeños juguetes y dispositivos de iluminación LED, equipos de reserva de memoria CMOS"
+        },
+        "HDCF18650-2000-3.2V": {
+            "usos": "Pack para baterías de bicicletas/scooters eléctricos, estaciones de energía portátiles, sistemas solares y eólicos, iluminación LED de larga duración, equipos GPS o sensores remotos."
+        },
+        "HDCF18650-3000-3.2V": {
+            "usos": "Pack para baterías de bicicletas/scooters eléctricos, estaciones de energía portátiles, sistemas solares y eólicos, iluminación LED de larga duración, equipos GPS o sensores remotos."
+        },
+        "HDCF18650-3400-3.2V": {
+            "usos": "Pack para baterías de bicicletas/scooters eléctricos, estaciones de energía portátiles, sistemas solares y eólicos, iluminación LED de larga duración, equipos GPS o sensores remotos."
+        },
+        "HDCF18650-4500-3.2V": {
+            "usos": "Pack para baterías de bicicletas/scooters eléctricos, estaciones de energía portátiles, sistemas solares y eólicos, iluminación LED de larga duración, equipos GPS o sensores remotos."
+        },
+        "PSL-FP-IFR26650PC": {
+            "usos": "Herramientas eléctricas, UPS de alta tasa, Sistemas de arranque que necesitan un alto amperaje inicial, equipos médicos portátiles de alto rendimiento, linternas de alta potencia, electrónica industrial"
+        },
+        "HDEL12.8V3.0AH": {
+            "usos": "Almacenamiento de energía solar, SAI/UPS, Vehiculos eléctricos y maquinaria grande, Modelos y vehículos RC, iluminación LED de emergencia, sistemas CCTV."
+        },
+        "HDEL12.8V4.0AH": {
+            "usos": "Almacenamiento de energía solar, SAI/UPS, Vehiculos eléctricos y maquinaria grande, Modelos y vehículos RC, iluminación LED de emergencia, sistemas CCTV."
+        },
+        "HDEL12.8V6.0AH": {
+            "usos": "Almacenamiento de energía solar, SAI/UPS, Vehiculos eléctricos y maquinaria grande, Modelos y vehículos RC, iluminación LED de emergencia, sistemas CCTV."
+        },
+        "HDEL12.8V8.0AH": {
+            "usos": "Almacenamiento de energía solar, SAI/UPS, Vehiculos eléctricos y maquinaria grande, Modelos y vehículos RC, iluminación LED de emergencia, sistemas CCTV."
+        },
+        "HDEL9.6V4.0AH": {
+            "usos": "Almacenamiento de energía solar, SAI/UPS, Vehiculos eléctricos y maquinaria grande, Modelos y vehículos RC, iluminación LED de emergencia, sistemas CCTV."
+        },
+        "HDEL9.6V8.0AH": {
+            "usos": "Almacenamiento de energía solar, SAI/UPS, Vehiculos eléctricos y maquinaria grande, Modelos y vehículos RC, iluminación LED de emergencia, sistemas CCTV."
+        }
+    }
+}

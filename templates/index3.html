@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Baterías - Búsqueda Inteligente</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .card {
+            transition: transform 0.2s;
+            margin-bottom: 1rem;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .battery-icon {
+            font-size: 2rem;
+            color: #0d6efd;
+        }
+        .autonomia-section {
+            background-color: #f8f9fa;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .resultado-item {
+            border-left: 4px solid #0d6efd;
+        }
+        .loading {
+            display: none;
+        }
+        .form-select:disabled {
+            background-color: #e9ecef;
+            opacity: 1;
+        }
+        .similitud-baja { color: #dc3545; }
+        .similitud-media { color: #fd7e14; }
+        .similitud-alta { color: #198754; }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <!-- Header -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="display-4">
+                    <i class="fas fa-battery-full battery-icon"></i>
+                    Calculadora de Baterías
+                </h1>
+                <p class="lead">Sistema de búsqueda para encontrar la batería perfecta</p>
+            </div>
+        </div>
+
+        <!-- Formulario de Búsqueda -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-search me-2"></i>
+                            Criterios de Búsqueda
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="formBusqueda">
+                            <div class="row g-3">
+                                <!-- Tipo de Batería -->
+                                <div class="col-md-6">
+                                    <label for="tipo" class="form-label">
+                                        <i class="fas fa-car-battery me-1"></i>
+                                        Tipo de Batería
+                                    </label>
+                                    <select class="form-select" id="tipo" name="tipo">
+                                        <option value="">CUALQUIER TIPO</option>
+                                    </select>
+                                </div>
+
+                                <!-- Aplicación -->
+                                <div class="col-md-6">
+                                    <label for="aplicacion" class="form-label">
+                                        <i class="fas fa-tools me-1"></i>
+                                        Aplicación / Uso
+                                    </label>
+                                    <div class="position-relative">
+                                        <select class="form-select" id="aplicacion" name="aplicacion">
+                                            <option value="">CUALQUIER APLICACION</option>
+                                        </select>
+                                        <div id="loadingAplicaciones" class="loading position-absolute top-50 end-0 translate-middle-y" style="display: none; right: 10px;">
+                                            <div class="spinner-border spinner-border-sm" role="status">
+                                                <span class="visually-hidden">Cargando...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">
+                                        <i class="fas fa-sync-alt me-1"></i>
+                                        Se actualiza automáticamente según el tipo seleccionado
+                                    </small>
+                                </div>
+
+                                <!-- Especificaciones Técnicas -->
+                                <!-- Voltaje -->
+                                <div class="col-md-4">
+                                    <label for="voltaje" class="form-label">
+                                        <i class="fas fa-bolt me-1"></i>
+                                        Voltaje (V)
+                                    </label>
+                                    <select class="form-select" id="voltaje" name="voltaje">
+                                        <option value="">SELECCIONA EL VOLTAJE</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="corriente" class="form-label" id="labelCorriente">
+                                        <i class="fas fa-tachometer-alt me-1"></i>
+                                        Corriente (Ah)
+                                    </label>
+                                    <input type="number" class="form-control" id="corriente" name="corriente" 
+                                           placeholder="Ej: 100" step="0.1" min="0">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="capacidad_wh" class="form-label">
+                                        <i class="fas fa-battery-three-quarters me-1"></i>
+                                        Capacidad (Wh)
+                                    </label>
+                                    <input type="number" class="form-control" id="capacidad_wh" name="capacidad_wh" 
+                                           placeholder="Ej: 300" step="1" min="0">
+                                </div>
+                            </div>
+
+                            <!-- Sección de Autonomía -->
+                            <div class="autonomia-section mt-4">
+                                <h6>
+                                    <i class="fas fa-clock me-2"></i>
+                                    Cálculo de Autonomía (Opcional)
+                                </h6>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="autonomia_horas" class="form-label">Autonomía deseada (horas)</label>
+                                        <input type="number" class="form-control" id="autonomia_horas" 
+                                               name="autonomia_horas" placeholder="Ej: 5" step="0.1" min="0">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="potencia_carga" class="form-label">Potencia de la carga (W)</label>
+                                        <input type="number" class="form-control" id="potencia_carga" 
+                                               name="potencia_carga" placeholder="Ej: 100" step="1" min="0">
+                                    </div>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="fas fa-info-circle me-1"></i>
+                                    La capacidad necesaria se calculará automáticamente: Horas × Potencia = Wh
+                                </small>
+                            </div>
+
+                            <!-- Permitir arreglos -->
+                            <div class="col-12 mt-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="permitir_arreglos" name="permitir_arreglos" non-checked>
+                                    <label class="form-check-label" for="permitir_arreglos">
+                                        <i class="fas fa-project-diagram me-1"></i>
+                                        Mostrar arreglos en serie/paralelo
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="row mt-4">
+                                <div class="col-12 d-flex gap-2 flex-wrap">
+                                    <button type="submit" class="btn btn-primary flex-fill">
+                                        <i class="fas fa-search me-2"></i>
+                                        Buscar Baterías
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary" onclick="limpiarFormulario()">
+                                        <i class="fas fa-eraser me-2"></i>
+                                        Limpiar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading -->
+        <div id="loading" class="loading text-center my-4">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Buscando baterías...</span>
+            </div>
+            <p class="mt-2">Buscando en el catálogo ...</p>
+        </div>
+
+        <!-- Resultados -->
+        <div id="resultados" class="row mt-4"></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script personalizado -->
+    <script>
+        // Configuración de búsqueda
+        let configBusqueda = {
+            nivelSimilitud: 60,
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            cargarTiposBaterias();
+            cargarAplicaciones();
+            cargarTodosLosVoltajes();
+        });
+
+        // Lista de tipos de batería que usan mAH
+        const tiposBateriaMAH = ['lifepo4', 'lipo', 'litio'];
+
+        // Función para actualizar la etiqueta de corriente según el tipo de batería
+        function actualizarEtiquetaCorriente(tipoBateria) {
+            const labelCorriente = document.getElementById('labelCorriente');
+            const inputCorriente = document.getElementById('corriente');
+            const tipoNormalizado = tipoBateria.toLowerCase();
+            
+            if (tiposBateriaMAH.includes(tipoNormalizado)) {
+                labelCorriente.innerHTML = '<i class="fas fa-tachometer-alt me-1"></i>Corriente (mAH)';
+                inputCorriente.placeholder = 'Ej: 1000';
+            } else {
+                labelCorriente.innerHTML = '<i class="fas fa-tachometer-alt me-1"></i>Corriente (Ah)';
+                inputCorriente.placeholder = 'Ej: 100';
+            }
+        }
+
+        // Función para formatear números a 2 decimales, eliminando .00 si es entero
+        function formatearNumero(num) {
+            if (num === null || num === undefined) return 'N/A';
+            
+            const numFloat = parseFloat(num);
+            if (isNaN(numFloat)) return 'N/A';
+            
+            // Redondear a 2 decimales y eliminar .00 si es entero
+            return numFloat % 1 === 0 ? numFloat.toString() : numFloat.toFixed(2);
+        }
+
+        // Función para cargar aplicaciones basadas en el tipo seleccionado
+        async function cargarAplicacionesPorTipo(tipoSeleccionado) {
+            const aplicacionSelect = document.getElementById('aplicacion');
+            const loadingElement = document.getElementById('loadingAplicaciones');
+            
+            if (!tipoSeleccionado) {
+                await cargarAplicaciones();
+                return;
+            }
+            
+            try {
+                // Mostrar loading
+                loadingElement.style.display = 'block';
+                aplicacionSelect.disabled = true;
+                aplicacionSelect.innerHTML = '<option value="">Cargando aplicaciones específicas...</option>';
+                
+                const res = await fetch(`/aplicaciones-por-tipo?tipo=${encodeURIComponent(tipoSeleccionado)}`);
+                const data = await res.json();
+                
+                // Limpiar y habilitar el select
+                aplicacionSelect.innerHTML = '<option value="">CUALQUIER APLICACION</option>';
+                aplicacionSelect.disabled = false;
+                loadingElement.style.display = 'none';
+                
+                if (data.success && data.aplicaciones.length > 0) {
+                    data.aplicaciones.forEach(app => {
+                        const option = document.createElement('option');
+                        option.value = app;
+                        option.textContent = app.toUpperCase();
+                        aplicacionSelect.appendChild(option);
+                    });
+                    
+                    // Mostrar información si hay pocos resultados
+                    if (data.aplicaciones.length <= 3) {
+                        console.log(`Solo ${data.aplicaciones.length} aplicación(es) disponible(s) para ${tipoSeleccionado}`);
+                    }
+                } else {
+                    // Si no hay aplicaciones específicas, cargar todas
+                    await cargarAplicaciones();
+                    console.warn(`No se encontraron aplicaciones específicas para "${tipoSeleccionado}", mostrando todas las aplicaciones`);
+                }
+            } catch (error) {
+                console.error('Error cargando aplicaciones por tipo:', error);
+                // En caso de error, cargar todas las aplicaciones
+                aplicacionSelect.disabled = false;
+                loadingElement.style.display = 'none';
+                await cargarAplicaciones();
+            }
+        }
+
+        async function cargarTiposBaterias() {
+            try {
+                const res = await fetch('/tipos-baterias');
+                const data = await res.json();
+                if (data.success) {
+                    const select = document.getElementById('tipo');
+                    data.tipos.forEach(tipo => {
+                        const option = document.createElement('option');
+                        option.value = tipo;
+                        option.textContent = tipo.toUpperCase();
+                        select.appendChild(option);
+                    });
+                    
+                    // Event listener para cambiar aplicaciones cuando cambie el tipo
+                    select.addEventListener('change', function() {
+                        const tipoSeleccionado = this.value;
+                        cargarAplicacionesPorTipo(tipoSeleccionado);
+                        cargarVoltajesPorTipo(tipoSeleccionado);
+                        actualizarEtiquetaCorriente(tipoSeleccionado);
+                    });
+                }
+            } catch (error) { 
+                console.error('Error cargando tipos de batería:', error); 
+            }
+        }
+
+        // Función para cargar todas las aplicaciones
+        async function cargarAplicaciones() {
+            try {
+                const aplicacionSelect = document.getElementById('aplicacion');
+                const loadingElement = document.getElementById('loadingAplicaciones');
+                
+                loadingElement.style.display = 'block';
+                aplicacionSelect.disabled = true;
+                
+                const res = await fetch('/aplicaciones');
+                const data = await res.json();
+                
+                aplicacionSelect.innerHTML = '<option value="">CUALQUIER APLICACION</option>';
+                aplicacionSelect.disabled = false;
+                loadingElement.style.display = 'none';
+                
+                if (data.success) {
+                    data.aplicaciones.forEach(app => {
+                        const option = document.createElement('option');
+                        option.value = app;
+                        option.textContent = app.toUpperCase();
+                        aplicacionSelect.appendChild(option);
+                    });
+                }
+            } catch (error) { 
+                console.error('Error cargando aplicaciones:', error);
+                document.getElementById('aplicacion').disabled = false;
+                document.getElementById('loadingAplicaciones').style.display = 'none';
+            }
+        }
+
+        // Función para cargar voltajes basados en el tipo seleccionado
+        async function cargarVoltajesPorTipo(tipoSeleccionado) {
+            const voltajeSelect = document.getElementById('voltaje');
+            
+            if (!tipoSeleccionado) {
+                // Si no hay tipo seleccionado, permitir cualquier voltaje (vaciamos y ponemos la opción por defecto)
+                voltajeSelect.innerHTML = '<option value="">SELECCIONA EL VOLTAJE</option>';
+                return;
+            }
+            
+            try {
+                // Mostrar loading en el select de voltaje? Podríamos deshabilitarlo mientras carga
+                voltajeSelect.disabled = true;
+                voltajeSelect.innerHTML = '<option value="">Cargando voltajes...</option>';
+                
+                const res = await fetch(`/voltajes-por-tipo?tipo=${encodeURIComponent(tipoSeleccionado)}`);
+                const data = await res.json();
+                
+                // Limpiar y habilitar el select
+                voltajeSelect.innerHTML = '<option value="">SELECCIONA EL VOLTAJE</option>';
+                voltajeSelect.disabled = false;
+                
+                if (data.success && data.voltajes.length > 0) {
+                    data.voltajes.forEach(voltaje => {
+                        const option = document.createElement('option');
+                        option.value = voltaje;
+                        // Formatear el voltaje para mostrar
+                        option.textContent = formatearNumero(voltaje) + ' V';
+                        voltajeSelect.appendChild(option);
+                    });
+                } else {
+                    // Si no hay voltajes específicos, dejamos solo la opción por defecto
+                    console.warn(`No se encontraron voltajes específicos para "${tipoSeleccionado}"`);
+                }
+            } catch (error) {
+                console.error('Error cargando voltajes por tipo:', error);
+                // En caso de error, permitir cualquier voltaje (dejamos la opción por defecto)
+                voltajeSelect.disabled = false;
+                voltajeSelect.innerHTML = '<option value="">SELECCIONA EL VOLTAJE</option>';
+            }
+        }
+
+        async function cargarTodosLosVoltajes() {
+            try {
+                const voltajeSelect = document.getElementById('voltaje');
+                const res = await fetch('/todos-los-voltajes');
+                const data = await res.json();
+                
+                voltajeSelect.innerHTML = '<option value="">SELECCIONA EL VOLTAJE</option>';
+                
+                if (data.success && data.voltajes.length > 0) {
+                    data.voltajes.forEach(voltaje => {
+                        const option = document.createElement('option');
+                        option.value = voltaje;
+                        option.textContent = formatearNumero(voltaje) + ' V';
+                        voltajeSelect.appendChild(option);
+                    });
+                }
+            } catch (error) {
+                console.error('Error cargando todos los voltajes:', error);
+            }
+        }
+
+        document.getElementById('formBusqueda').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            data.permitir_arreglos = document.getElementById('permitir_arreglos').checked;
+            
+            // Convertir corriente de mAH a AH si el tipo de batería es de los que usan mAH
+            const tipoBateria = data.tipo;
+            if (tipoBateria && tiposBateriaMAH.includes(tipoBateria.toLowerCase())) {
+                // Si la corriente está en mAH, la convertimos a AH dividiendo entre 1000
+                if (data.corriente) {
+                    data.corriente = parseFloat(data.corriente) / 1000;
+                }
+            }
+
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('resultados').innerHTML = '';
+
+            try {
+                const res = await fetch('/buscar', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const result = await res.json();
+                mostrarResultados(result);
+            } catch (error) {
+                console.error('Error en búsqueda:', error);
+                mostrarError('Error al realizar la búsqueda. Verifique su conexión e intente nuevamente.');
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        });
+
+        function mostrarResultados(result) {
+            const resultadosDiv = document.getElementById('resultados');
+            if (!result.success) return mostrarError(result.error);
+            if (result.total === 0) {
+                resultadosDiv.innerHTML = `
+                    <div class="col-12">
+                        <div class="alert alert-warning">
+                            <h5><i class="fas fa-exclamation-triangle me-2"></i>No se encontraron baterías</h5>
+                            <p class="mb-2">No se encontraron baterías que coincidan con los criterios especificados.</p>
+                            <p class="mb-1 fw-bold">Sugerencias:</p>
+                            <ul class="small mb-0">
+                                <li>Verifique que los tipos y aplicaciones seleccionados existan en el catálogo</li>
+                                <li>Use menos criterios de filtrado para obtener más resultados</li>
+                                <li>Active la opción "Mostrar arreglos en serie/paralelo"</li>
+                            </ul>
+                        </div>
+                    </div>`;
+                return;
+            }
+
+            const capacidadCalculadaFormateada = result.capacidad_calculada ? 
+                formatearNumero(result.capacidad_calculada) : null;
+
+            let html = `<div class="col-12 mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4><i class="fas fa-battery-full me-2"></i>Resultados (${result.total})</h4>
+                                <div class="d-flex gap-2 align-items-center">
+                                    ${result.permitir_arreglos ? 
+                                        `<span class="badge bg-success"><i class="fas fa-project-diagram me-1"></i>Arreglos activados</span>` : ''}
+                                    ${capacidadCalculadaFormateada ? 
+                                        `<span class="badge bg-info">Capacidad calculada: ${capacidadCalculadaFormateada} Wh</span>` : ''}
+                                </div>
+                            </div>
+                        </div>`;
+            
+            result.resultados.forEach(b => {
+                const numeroParte = b.numero_parte !== 'N/A' ? b.numero_parte : 'No especificado';
+
+                // Determinar si esta batería usa mAH
+                const usaMAH = tiposBateriaMAH.includes(b.tipo.toLowerCase());
+
+                // Formatear la corriente
+                let corrienteFormateada;
+                let unidadCorriente;
+                if (usaMAH) {
+                    corrienteFormateada = formatearNumero(b.corriente * 1000);
+                    unidadCorriente = ' mAH';
+                } else {
+                    corrienteFormateada = formatearNumero(b.corriente);
+                    unidadCorriente = ' Ah';
+                }
+                
+                const voltajeFormateado = formatearNumero(b.voltaje);
+                const capacidadFormateada = formatearNumero(b.capacidad_wh);
+                
+                // Determinar si mostrar información de arreglo
+                const mostrarArreglo = b.n_serie > 1 || b.n_paralelo > 1;
+                const esArreglo = b.es_arreglo || mostrarArreglo;
+                
+                // Calcular valores totales del arreglo
+                const voltajeTotal = b.voltaje_total || b.voltaje;
+                const capacidadTotal = b.capacidad_total || b.capacidad_wh;
+                
+                html += `<div class="col-lg-6 col-xl-4">
+                <div class="card resultado-item h-100 ${esArreglo ? 'border-success' : ''}">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title">${b.tipo}</h5>
+                            ${esArreglo ? '<span class="badge bg-success small"><i class="fas fa-project-diagram me-1"></i>Arreglo</span>' : ''}
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">${numeroParte}</h6>
+                        
+                        <!-- Especificaciones individuales -->
+                        <div class="mb-3">
+                            <small class="text-muted"><i class="fas fa-info-circle me-1"></i>Especificaciones por batería:</small>
+                            <div class="row mt-1">
+                                <div class="col-6"><small class="text-muted">Voltaje</small><p class="mb-1"><strong>${voltajeFormateado} V</strong></p></div>
+                                <div class="col-6"><small class="text-muted">Corriente</small><p class="mb-1"><strong>${corrienteFormateada} ${unidadCorriente}</strong></p></div>
+                                <div class="col-12"><small class="text-muted">Capacidad</small><p class="mb-1"><strong>${capacidadFormateada} Wh</strong></p></div>
+                            </div>
+                        </div>
+                        
+                        ${mostrarArreglo ? `
+                        <!-- Información del arreglo -->
+                        <div class="mb-3 p-2 bg-light rounded">
+                            <small class="text-muted"><i class="fas fa-calculator me-1"></i>Configuración del arreglo:</small>
+                            <div class="row mt-1">
+                                <div class="col-6"><small class="text-muted">Serie</small><p class="mb-1"><strong>${b.n_serie} baterías</strong></p></div>
+                                <div class="col-6"><small class="text-muted">Paralelo</small><p class="mb-1"><strong>${b.n_paralelo} baterías</strong></p></div>
+                                <div class="col-6"><small class="text-muted">Voltaje total</small><p class="mb-1"><strong>${formatearNumero(voltajeTotal)} V</strong></p></div>
+                                <div class="col-6"><small class="text-muted">Capacidad total</small><p class="mb-1"><strong>${formatearNumero(capacidadTotal)} Wh</strong></p></div>
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        <div class="mt-auto">
+                            <small class="text-muted">Aplicaciones:</small>
+                            <p class="small mb-1">${b.aplicaciones}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+            });
+
+            resultadosDiv.innerHTML = html;
+        }
+
+        function mostrarError(msg) {
+            document.getElementById('resultados').innerHTML = `
+                <div class="col-12">
+                    <div class="alert alert-danger">
+                        <h5><i class="fas fa-exclamation-circle me-2"></i>Error en la búsqueda</h5>
+                        <p class="mb-0">${msg}</p>
+                    </div>
+                </div>`;
+        }
+
+        function limpiarFormulario() {
+            document.getElementById('formBusqueda').reset();
+            document.getElementById('resultados').innerHTML = '';
+
+            //Restablecer el select del voltaje al estado inicial
+            document.getElementById('voltaje').innerHTML = '<option value="">SELECCIONA EL VOLTAJE</option>';
+            
+            cargarAplicaciones();
+        }
+    </script>
+</body>
+</html>
